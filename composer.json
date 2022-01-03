@@ -1,0 +1,53 @@
+{
+    "name": "davidkloucek/framework",
+    "description": "E-commerce framework",
+    "keywords": [],
+    "homepage": "https://github.com/davidkloucek/framework",
+    "authors": [
+        {
+            "name": "Jedničky s.r.o.",
+            "homepage": "https://www.jednicky.cz"
+        },
+        {
+            "name": "David Klouček",
+            "homepage": "https://www.davidkloucek.cz"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "doctrine/common": "^2.13.1",
+        "nette/utils": ">=3.0.3",
+        "symfony/property-access": "^5.4"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.3.1",
+        "ninjify/qa": "^0.12",
+        "ninjify/nunjuck": "^0.4",
+        "phpstan/phpstan": "^0.12.64",
+        "phpstan/phpstan-deprecation-rules": "^0.12.2",
+        "phpstan/phpstan-nette": "^0.12.3",
+        "phpstan/phpstan-strict-rules": "^0.12.2",
+        "nette/tester": ">=2.0"
+    },
+    "conflict": {
+        "nette/di": "<3.0.6",
+        "nette/schema": "<1.1.0"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse",
+        "tester": "tester tests -s"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "vendor-dir": "vendor",
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.2.27"
+        },
+        "sort-packages": true
+    }
+}
