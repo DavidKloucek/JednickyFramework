@@ -25,11 +25,10 @@ Po změně namespace aktualizovat composer.
 
 ### Testování
 
-Spouštět testy! 
-Nette/Tester vs PHPUnit? Zatím máme Nette/Tester.
-Databázové věci testovat na SQLite? 
-
-PHPStan zatím nemusíme.
+- Spouštět testy! 
+- Nette/Tester vs PHPUnit? Zatím máme Nette/Tester.
+- PHPStan zatím nemusíme.
+- Databázové věci testovat na SQLite?
 
 
 https://github.com/nette-intellij/intellij-nette-tester
