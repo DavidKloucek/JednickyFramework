@@ -10,8 +10,9 @@ V budoucnu rozdělit tento jeden balíček "Framework" na jednotlivé, např:
 ```
 Entity a repozitáře, fasády.. rozdělit také na jednotlivé balíčky (nikoliv do balíčku "Orm"), např.:
 ```- Jednicky/Order
-- Jednicky/Product
-- Jednicky/Orm #obecný balíček s vlastním EntityManager (pro překlad poděděných entit), obecné filtry, atd.?
+- Jednicky/Product # základní věci okolo produktu
+- Jednicky/ProductAttribute # vše okolo atributů
+- Jednicky/Orm # obecný balíček s vlastním EntityManager (pro překlad poděděných entit), obecné filtry, atd.?
 ```
 
 ## Poznámky
@@ -23,6 +24,13 @@ Namespace v PHP začíná vždy Jednicky, aby se nepletlo již se zavedeným. Je
 Po změně namespace aktualizovat composer.
 
 ### Testování
+
+Spouštět testy! 
+Nette/Tester vs PHPUnit? Zatím máme Nette/Tester.
+Databázové věci testovat na SQLite? 
+
+PHPStan zatím nemusíme.
+
 
 https://github.com/nette-intellij/intellij-nette-tester
 
