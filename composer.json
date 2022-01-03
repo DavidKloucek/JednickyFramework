@@ -17,6 +17,7 @@
         "php": ">=7.2",
         "doctrine/common": "^2.13.1",
         "nette/utils": ">=3.0.3",
+        "nette/http": "~2.4.7 || ~3.0",
         "symfony/property-access": "^5.4"
     },
     "require-dev": {
