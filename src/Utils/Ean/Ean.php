@@ -16,12 +16,17 @@ class Ean
     public function __construct(string $value)
     {
         $value = Strings::trim($value);
-        // @todo Je začínající 0 validní nebo ne?
-        // @todo Nutné také zavést validaci self::isEan13()
+
+        // @todo Tady by se měla opatrně doplnit validace, ale už nyní máme v databázích klientů nevalidní EANy, tak bacha
+        // Je začínající 0 validní nebo ne?
+        // Nutné také zavést validaci self::isEan13()
         //$value = self::removeLeadingZero($value);
+
         if ($value === '') {
             throw new EanException("EAN '$value' není validní");
         }
+
+        $this->value = $value;
     }
 
     public function isEquals(Ean $ean): bool
