@@ -14,7 +14,7 @@ $ean2 = new Ean('72512199220');
 
 Assert::true($eanZero->isEquals($ean2));
 
-Assert::equal($eanZero->getValueWithoutLeadingZero($eanZero->getValueWithoutLeadingZero()), '72512199220');
+Assert::equal($eanZero->getValueWithoutLeadingZero(), '72512199220');
 
 Assert::exception(function () {
     new Ean('');
