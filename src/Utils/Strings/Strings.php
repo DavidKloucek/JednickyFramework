@@ -22,7 +22,7 @@ class Strings extends \Nette\Utils\Strings
     }
 
     /**
-     * @param string price
+     * @param string|int|float|null $price
      * @param null $default
      * @return float
      */
